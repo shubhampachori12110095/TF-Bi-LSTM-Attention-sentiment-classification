@@ -37,7 +37,7 @@ def batch_generator(X, y, batch_size):
 
 # Test batch generator
 if __name__ == "__main__":
-    gen = batch_generator(np.array(['a', 'b', 'c', 'd']), np.array([1, 2, 3, 4]), 3)
+    gen = batch_generator(np.array(['o', 'p', 'q'']), np.array([1, 2, 3]), 3)
     for _ in range(8):
         x_gen, y_gen = next(gen)
         print(x_gen, y_gen)
